@@ -6,7 +6,6 @@ on:
   push:
     tags:
       - main
-      # - 'v*'
 
 
 jobs:
@@ -20,4 +19,3 @@ jobs:
     - name: test
       run: echo "Running"
       shell: bash
-    # - uses: ncipollo/release-action@v1
