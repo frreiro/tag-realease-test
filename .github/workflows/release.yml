@@ -4,8 +4,7 @@ name: release
 # aciona em todos os commits tags começados com "v" (ex: "v0.1.4")
 on: 
   push:
-    tags:
-      - main
+    - main
 
 
 jobs:
