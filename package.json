@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "create": "pkg src/index.js -t node14-win-x64",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "create": "pkg src/index.js -t node14-win-x64"
   },
   "keywords": [],
   "author": "",
