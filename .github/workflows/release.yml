@@ -30,8 +30,8 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v19.0.0
-          name: Release v19.0.0
+          tag_name: v20.0.0
+          name: Release v20.0.0
           draft: false
           prerelease: false
           generate_release_notes: true
