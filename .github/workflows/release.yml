@@ -27,6 +27,8 @@ jobs:
 
       - name: Create release
         id: create_release
+        permissions:
+          contents: write
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v19.0.0
