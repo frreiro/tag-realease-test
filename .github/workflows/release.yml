@@ -1,0 +1,19 @@
+# nome do workflow
+name: Release
+
+# aciona em todos os commits tags começados com "v" (ex: "v0.1.4")
+on: 
+  push:
+    tags:
+      -"v*"
+
+
+jobs: 
+  release: 
+    name: "Release"
+    runs-on: "ubunto-latest"
+    steps: 
+      - uses: "marvinpinto/action-automatic-releases@latest"
+        with: 
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          prerelease: false
