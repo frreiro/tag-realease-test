@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Run console
-        run: npm run create
+        run: npm i && npm run create
         shell: bash 
 
     
