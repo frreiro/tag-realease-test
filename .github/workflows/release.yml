@@ -26,9 +26,11 @@ jobs:
           name: monitory_sftw
           path: monitory_sftw.exe
 
+      - name: Generate Changelog
+        run: echo "# Good things have arrived" > ${{ github.workspace }}-CHANGELOG.txt
+        
       - name: Create release
         id: create_release
-        
         uses: softprops/action-gh-release@v1
         with:
           tag_name: v19.0.0
