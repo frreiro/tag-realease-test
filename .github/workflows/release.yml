@@ -23,7 +23,7 @@ jobs:
         uses: actions/upload-artifact@v2
         with:
           name: monitory_sftw
-          path: ./monitory_sftw.exe
+          path: monitory_sftw.exe
 
       - name: Create release
         id: create_release
@@ -42,9 +42,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
           upload_url: ${{ steps.create_release.outputs.upload_url }}
-          asset_path: artifact-name.zip
-          asset_name: artifact-name.zip
-          asset_content_type: application/zip
+          asset_path: monitory_sftw.exe
+          asset_name: monitory_sftw.exe
+          asset_content_type: application/octet-stream
 
 
 
