@@ -9,8 +9,13 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
+    
     steps:
-    - uses: actions/checkout@v2
-    - uses: ncipollo/release-action@v1
+
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Run console
+        run: echo "Hello Word" 
+
+    
