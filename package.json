@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "create": "pkg src/index.js -t node14-win-x64"
+    "create": "pkg src/index.js -t node14-win-x64 -o monitory_sftw.exe"
   },
   "keywords": [],
   "author": "",
