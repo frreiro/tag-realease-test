@@ -1,16 +1,15 @@
-# nome do workflow
-name: release
+name: Releases
 
-# aciona em todos os commits tags começados com "v" (ex: "v0.1.4")
 on: 
   push:
-    - main
-
+    - "main"
 
 jobs:
+
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-    - name: test
-      run: echo "Running"
-      shell: bash
+    - uses: actions/checkout@v2
+    - uses: ncipollo/release-action@v1
