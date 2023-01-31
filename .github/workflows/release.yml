@@ -1,5 +1,5 @@
 # nome do workflow
-name: Release
+name: release
 
 # aciona em todos os commits tags começados com "v" (ex: "v0.1.4")
 on: 
