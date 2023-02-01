@@ -34,8 +34,8 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v21.0.0
-          name: Release v21.0.0
+          tag_name: v22.0.0
+          name: Release v22.0.0
           draft: false
           prerelease: false
           generate_release_notes: true
