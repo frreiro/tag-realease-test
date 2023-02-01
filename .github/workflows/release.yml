@@ -5,8 +5,8 @@ name: Releases
 ## Alterar para tag
 on:
   push:
-    branches: 
-      - main
+    tags: 
+      - v*
 
 
 jobs:
@@ -44,8 +44,8 @@ jobs:
         id: create_release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v24.0.0
-          name: Release v24.0.0
+          tag_name: ${{ github.ref }}
+          name: Release ${{ github.ref }}
           draft: false
           prerelease: false
           generate_release_notes: true
