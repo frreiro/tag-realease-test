@@ -29,7 +29,7 @@ jobs:
       - name: Create .env
         uses: SpicyPizza/create-envfile@v1
         with:
-          envkey_NODE_ENV:  production
+          envkey_NODE_ENV: production
           file_name: .env.production
           fail_on_empty: true
 
