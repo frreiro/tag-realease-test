@@ -25,6 +25,18 @@ jobs:
         run: npm i && npm run create
         shell: bash 
 
+      # Gera o arquivo .env
+      - name: Create .env
+        uses: SpicyPizza/create-envfile@v1
+        with:
+          envkey_PORT: 5000
+          envkey_NODE_ENV:  production
+          envkey_API_URL: ${{secrets.API_URL}}
+          envkey_LOCAL_URL: http://localhost:5000/
+          file_name: .env.production
+          fail_on_empty: true
+
+
       # Faz o upload do arquivo .exe da máquina do github para o github
       - name: Upload .exe file to Github
         uses: actions/upload-artifact@v2
